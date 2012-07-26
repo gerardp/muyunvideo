@@ -117,7 +117,7 @@ class Records(models.Model):
     class Meta:
         db_table = u'records'
 
-class Users(User):
+class Users(models.Model):
     uid = models.IntegerField(unique=True)
     name = models.CharField(max_length=93, unique=True)
     accountcat_id = models.IntegerField()
