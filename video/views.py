@@ -77,14 +77,16 @@ def requestLoginWithUsername(request):
 
 def requestVideoCallWithUsername(request):
     if request.method == 'POST':
+        # Connect to database
         conn=MySQLdb.connect(host="localhost",user="root",passwd="javajava",db="muyun")
-        apns = APNs( use_sandbox = True, cert_file = 'muyuncert.pem', key_file = 'muyunkey2.pem' )
         username = request.POST['username']
         callToUsername = request.POST['callToUsername']
         n = cursor.execute("SELECT * FROM users WHERE name=%s", username)
+        m = cursor.fetchall()
+        uid_sender = m[0]
         # Send a notification
+        apns = APNs( use_sandbox = True, cert_file = 'muyuncert.pem', key_file = 'muyunkey2.pem' )
         token_hex = 'aea23b4f8af477edb5ed701eb69b6a32489620fa34c0dbdfc8428170a68d2b08'
-        #token_hex = .pushToken
         payload = Payload(alert=message.decode('utf-8'), sound="default", badge=1,
                     custom={'callType':'videoCall', 
 	                'callContact': {
@@ -97,7 +99,26 @@ def requestVideoCallWithUsername(request):
 		    	}})
         payload = Payload(alert=message.decode('utf-8'), sound="default", badge=1)
         apns.gateway_server.send_notification(token_hex, payload)
+
     else:
         return HttpResponse("Error!")
 
+def answerVideoCallWithUsername(request):
+    if request.method == 'POST':
 
+    else:
+        return HttpResponse("Error!")
+
+def deliberateToken():
+    # Get SessionID and token from Opentok cloud server
+    api_key = '16693682'
+    api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
+    session_address = '127.0.0.1'
+    opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=True)
+    session = opentok_sdk.create_session(session_address)
+    print session.session_id
+    connectionMetadata = 'username=Bob, userLevel=4'
+    for i in range(0,3):
+        token = opentok_sdk.generate_token(session.session_id)
+        print token
+        data = json.dumps({'sessionID':session.session_id, 'token':token})
