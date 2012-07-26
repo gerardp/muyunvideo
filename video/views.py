@@ -77,9 +77,11 @@ def requestLoginWithUsername(request):
 
 def requestVideoCallWithUsername(request):
     if request.method == 'POST':
+        conn=MySQLdb.connect(host="localhost",user="root",passwd="javajava",db="muyun")
         apns = APNs( use_sandbox = True, cert_file = 'muyuncert.pem', key_file = 'muyunkey2.pem' )
         username = request.POST['username']
         callToUsername = request.POST['callToUsername']
+        n = cursor.execute("SELECT * FROM users WHERE name=%s", username)
         # Send a notification
         token_hex = 'aea23b4f8af477edb5ed701eb69b6a32489620fa34c0dbdfc8428170a68d2b08'
         #token_hex = .pushToken
