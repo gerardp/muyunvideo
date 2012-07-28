@@ -139,3 +139,8 @@ class Users(models.Model):
     class Meta:
         db_table = u'users'
 
+class Sessions(models.Model):
+    sender_id = models.IntegerField()
+    receiver_id = models.IntegerField()
+    interpreter_id = models.IntegerField()
+
