@@ -1,0 +1,255 @@
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 74, in requestLoginWithUsername
+    logging.log("login request: %s, %s", (username, password))
+UnboundLocalError: local variable 'username' referenced before assignment
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 74, in requestLoginWithUsername
+    logging.log("login request: %s, %s", (username, password))
+UnboundLocalError: local variable 'username' referenced before assignment
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 77, in requestLoginWithUsername
+    password = request.POST['password']
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/datastructures.py", line 258, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'password' not found in <QueryDict: {u'username': [u'ddmbr'], u'ip': [u'127.0.0.1']}>"
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 78, in requestLoginWithUsername
+    logging.log("login request: %s, %s", (username, password))
+  File "/usr/lib/python2.6/logging/__init__.py", line 1497, in log
+    root.log(*((level, msg)+args), **kwargs)
+  File "/usr/lib/python2.6/logging/__init__.py", line 1115, in log
+    raise TypeError, "level must be an integer"
+TypeError: level must be an integer
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 79, in requestLoginWithUsername
+    logging.log("login request: %s, %s", (username, password))
+  File "/usr/lib/python2.6/logging/__init__.py", line 1497, in log
+    root.log(*((level, msg)+args), **kwargs)
+  File "/usr/lib/python2.6/logging/__init__.py", line 1115, in log
+    raise TypeError, "level must be an integer"
+TypeError: level must be an integer
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 79, in requestLoginWithUsername
+    logging.log("login request: %s, %s", (username, password))
+  File "/usr/lib/python2.6/logging/__init__.py", line 1497, in log
+    root.log(*((level, msg)+args), **kwargs)
+  File "/usr/lib/python2.6/logging/__init__.py", line 1115, in log
+    raise TypeError, "level must be an integer"
+TypeError: level must be an integer
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/lib/python2.6/dist-packages/django/core/urlresolvers.py", line 300, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.6/dist-packages/django/core/urlresolvers.py", line 209, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.6/dist-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/usr/local/lib/python2.6/dist-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/var/www/muyunvideo/video/views.py", line 26, in <module>
+    logger = logging.Logger()
+TypeError: __init__() takes at least 2 arguments (1 given)
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 86, in requestLoginWithUsername
+    pushToken = request.POST['pushToken']
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/datastructures.py", line 258, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'pushToken' not found in <QueryDict: {u'username': [u'ddmbr'], u'password': [u'123']}>"
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 87, in requestLoginWithUsername
+    if request.POST['pushToken']:
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/datastructures.py", line 258, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'pushToken' not found in <QueryDict: {u'username': [u'ddmbr'], u'password': [u'123']}>"
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 92, in requestLoginWithUsername
+    logging.debug("Generated pushToken: %s", pushToken)
+UnboundLocalError: local variable 'pushToken' referenced before assignment
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'message': 'success'}
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 103, in requestLoginWithUsername
+    cursor.execute("update users set loginpassword=%s where name=%s", (newpassword, username))
+NameError: global name 'newpassword' is not defined
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'message': 'success'}
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 104, in requestLoginWithUsername
+    cursor.execute("update users set loginpassword=%s where name=%s", (newpassword, username))
+NameError: global name 'newpassword' is not defined
+INFO:root:response: {'requestType': 'login', 'message': 'success'}
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 104, in requestLoginWithUsername
+    cursor.execute("update users set loginpassword=%s where name=%s", (newpassword, username))
+NameError: global name 'newpassword' is not defined
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 103, in requestLoginWithUsername
+    cursor.execute("update users set loginpassword=%s where name=%s", (newpassword, username))
+NameError: global name 'newpassword' is not defined
+INFO:root:response: {'requestType': 'login', 'message': 'success'}
+ERROR:django.request:Internal Server Error: /session/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 127, in requestSessionWithUsername
+    logging.info("session and token request: %s", username)
+UnboundLocalError: local variable 'username' referenced before assignment
+INFO:root:session and token request: ddmbr
+ERROR:django.request:Internal Server Error: /session/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 131, in requestSessionWithUsername
+    session_address = request.META['address']
+KeyError: 'address'
+INFO:root:session and token request: ddmbr
+ERROR:django.request:Internal Server Error: /session/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 136, in requestSessionWithUsername
+    opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=True)
+NameError: global name 'OpenTokSDK' is not defined
+INFO:root:session and token request: ddmbr
+ERROR:django.request:Internal Server Error: /session/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 141, in requestSessionWithUsername
+    cursor.execute("update users set seesion_id=%s where name=%s", (videoSession.session_id, username))
+  File "/usr/lib/pymodules/python2.6/MySQLdb/cursors.py", line 166, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/pymodules/python2.6/MySQLdb/connections.py", line 35, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'seesion_id' in 'field list'")
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': 'session_id', 'token': 'tokbox_token'}
+INFO:root:session and token request: ddmbr
+ERROR:django.request:Internal Server Error: /session/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 148, in requestSessionWithUsername
+    "sessionID": session_id,
+NameError: global name 'session_id' is not defined
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMTowNzo0MyBQRFQgMjAxMn4wLjc2NjA5MDI', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZjU3NGFlYjg3NTdhNmE0ZWM4NzExMDYyYjA1MmRlZDk2MjE0ZDlmNDpub25jZT05NjAzNjMmY3JlYXRlX3RpbWU9MTM0Mzc5NDM4NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNVG93TnpvME15QlFSRlFnTWpBeE1uNHdMamMyTmpBNU1ESQ=='}
+INFO:root:response: {'requestType': 'login', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNDoyMDoxNi45MzQ1ODgrMDA6MDB-MC4wMzIzOTU3NzE0Mjh-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9N2IzOGYyZDM1MWQxNDgzNmZkNDA5MTZlZDg5MjI1MTg0YzFhZGQxMTpub25jZT0zODY5ODUmY3JlYXRlX3RpbWU9MTM0Mzc5NTE0MSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdORG95TURveE5pNDVNelExT0Rnck1EQTZNREItTUM0d016SXpPVFUzTnpFME1qaC0='}
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 85, in requestLoginWithUsername
+    if m[0][1]==username and m[0][4]==password:
+IndexError: tuple index out of range
+INFO:root:session and token request: omega
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn5-MjAxMi0wOC0wMSAwNDozNDo1OS42Nzc3MTMrMDA6MDB-MC4zMzg1NTQzMTA1MTJ-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NjMwZWU0MjA4NWNhMzVmM2VmMTNmMjAzYTdlNDc1MjRiM2Q2M2NhNTpub25jZT00MDEyMDQmY3JlYXRlX3RpbWU9MTM0Mzc5NjAyNCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW41LU1qQXhNaTB3T0Mwd01TQXdORG96TkRvMU9TNDJOemMzTVRNck1EQTZNREItTUM0ek16ZzFOVFF6TVRBMU1USi0='}
+INFO:root:response: {'requestType': 'login', 'username': u'test', 'message': 'success'}
+INFO:root:session and token request: test
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNDozNToxNS43NDc5MDcrMDA6MDB-MC45NDM3NTc3MDk2Mzl-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzdhNmYwNWZkMWE4OGY2ZmZhOWM2ZTViZmNmYTAyYTk5NTdlMDYzNzpub25jZT02NjE2MTYmY3JlYXRlX3RpbWU9MTM0Mzc5NjA0MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdORG96TlRveE5TNDNORGM1TURjck1EQTZNREItTUM0NU5ETTNOVGMzTURrMk16bC0='}
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 85, in requestLoginWithUsername
+    if m[0][1]==username and m[0][4]==password:
+IndexError: tuple index out of range
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNDozNjoyNy44NTY5ODIrMDA6MDB-MC44MDc5ODA3MDAyODZ-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NjMwMmE2OWI0ODE0OWRiNjIzNDA0NWM2NGZkMmZjNDgwYmY5MzMzOTpub25jZT05NDA0MzkmY3JlYXRlX3RpbWU9MTM0Mzc5NjExMiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdORG96TmpveU55NDROVFk1T0RJck1EQTZNREItTUM0NE1EYzVPREEzTURBeU9EWi0='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjozNDo0NiBQRFQgMjAxMn4wLjEwMTM1MDA3', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjQ2M2QzMTEwZjhhZTFjYzNjYzk4M2ExYjVmZWViYWQ5MWQ2NDcwZDpub25jZT00NDE0NTAmY3JlYXRlX3RpbWU9MTM0Mzc5OTYxMSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNam96TkRvME5pQlFSRlFnTWpBeE1uNHdMakV3TVRNMU1EQTM='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjozNTozMSBQRFQgMjAxMn4wLjU3MTM3MjE', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZTRmMWI1ZTBiMWVkYzY4NDZhNjBlZGVkN2UxNTNhMjU4MThhMmZjOTpub25jZT01NDEyOTMmY3JlYXRlX3RpbWU9MTM0Mzc5OTY1NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNam96TlRvek1TQlFSRlFnTWpBeE1uNHdMalUzTVRNM01qRQ=='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjozNjo0MCBQRFQgMjAxMn4wLjExODUxMTg1Ng', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZDI0ZTM0NTkyYzAxN2IwYzM0NjAyYzUwNTk5ZjZhOWY4MmU1NDM3ODpub25jZT0zMzE2MzEmY3JlYXRlX3RpbWU9MTM0Mzc5OTcyNCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNam96TmpvME1DQlFSRlFnTWpBeE1uNHdMakV4T0RVeE1UZzFOZw=='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjo0MDoxMSBQRFQgMjAxMn4wLjY4MzQ3MjM0', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9OWY3NTk4MzVkM2MwNmJjNjVlMGIzMDA1NTlhN2UwNzE5ZGZiZTkyYTpub25jZT02MTE0MzUmY3JlYXRlX3RpbWU9MTM0Mzc5OTkzNiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNam8wTURveE1TQlFSRlFnTWpBeE1uNHdMalk0TXpRM01qTTA='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjo0MDozMyBQRFQgMjAxMn4wLjYxMDAxMzI1', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MDM2NmU2N2Q1YzE4NTdkMmE3OTU3OGI2ZjlkNGFlM2E0N2FjMTdkYjpub25jZT03MjE1NDQmY3JlYXRlX3RpbWU9MTM0Mzc5OTk1OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNam8wTURvek15QlFSRlFnTWpBeE1uNHdMall4TURBeE16STE='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjo0NDo1OCBQRFQgMjAxMn4wLjM5NTE5MTM3', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YTVkYWVlMTBlYzBhYWMxNmU3YTJiMDFkZWFlYzVlMTA3YzU3YTUxYTpub25jZT00MjUwNSZjcmVhdGVfdGltZT0xMzQzODAwMjIyJnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9MV9NWDR4TmpZNU16WTRNbjR4TWpjdU1DNHdMakYtVkhWbElFcDFiQ0F6TVNBeU1qbzBORG8xT0NCUVJGUWdNakF4TW40d0xqTTVOVEU1TVRNMw=='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjo0NjoxNSBQRFQgMjAxMn4wLjY3Nzg5NjE', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjJjNmNhZjkwMzkyNGNiY2I3MGE3Mzc3YzI4Y2RmMDMwY2ExMmM3ODpub25jZT01NDU4MzUmY3JlYXRlX3RpbWU9MTM0MzgwMDMwMCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNam8wTmpveE5TQlFSRlFnTWpBeE1uNHdMalkzTnpnNU5qRQ=='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-VHVlIEp1bCAzMSAyMjo0Njo1MSBQRFQgMjAxMn4wLjMwOTkyNjI3', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Y2FlNDQ4ZmM3ZDBmOWEzMWYwNTY5YWI5OTZjYjI0YmRiYTA0YzM1Yjpub25jZT04MTk2NDYmY3JlYXRlX3RpbWU9MTM0MzgwMDMzNiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVZIVmxJRXAxYkNBek1TQXlNam8wTmpvMU1TQlFSRlFnTWpBeE1uNHdMak13T1RreU5qSTM='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNTo1MzozNC42NzUxMDErMDA6MDB-MC44NDkyMzE1NjUxMjF-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NzExOTI5NzNiMjMyNzcxNDVmOTg1ZWNhNzI1NDQ0YWJjMTE4MDQ2Mjpub25jZT00NDE0MDMmY3JlYXRlX3RpbWU9MTM0MzgwMDczOSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOVG8xTXpvek5DNDJOelV4TURFck1EQTZNREItTUM0NE5Ea3lNekUxTmpVeE1qRi0='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNTo1NToxNS4wOTc1MDgrMDA6MDB-MC44OTMyNTU5OTYyMDR-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZjI3YTNhYmFlNDBjNTVmZjkzYzdjYjc0YzViOTA4NGFkOGRhMmUxYTpub25jZT02NTU0MjQmY3JlYXRlX3RpbWU9MTM0MzgwMDgzOSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOVG8xTlRveE5TNHdPVGMxTURnck1EQTZNREItTUM0NE9UTXlOVFU1T1RZeU1EUi0='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNTo1OTozMC43NzcyNDMrMDA6MDB-MC43NjM0MTAzNzU0NDh-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MGFjODI2NWM3MWY4OGU5N2NmNTlkMWUyMDcyNDFiMzdjNDhmZTcxNjpub25jZT0zMjM5ODcmY3JlYXRlX3RpbWU9MTM0MzgwMTA5NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOVG8xT1Rvek1DNDNOemN5TkRNck1EQTZNREItTUM0M05qTTBNVEF6TnpVME5EaC0='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNjowMDozNy41NzczNDkrMDA6MDB-MC4zMjgwNjcxNTI5fg', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NzE4NTEyZjRiNmM3Y2VhNDVlNDczYjhmNjM4N2IzZTdmZjJiNDI5NTpub25jZT02OTA3OTQmY3JlYXRlX3RpbWU9MTM0MzgwMTE2MiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOam93TURvek55NDFOemN6TkRrck1EQTZNREItTUM0ek1qZ3dOamN4TlRJNWZn'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNjowMTowNi4xMDUwNDgrMDA6MDB-MC44Njk2OTM0MzM2NDd-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ODUwNjc2MTBmNTY5YWQ2OTQxYmM0MzcyNWI5Mzk0NmU2Y2ExYTI0MTpub25jZT02NzQ0NDgmY3JlYXRlX3RpbWU9MTM0MzgwMTE5MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOam93TVRvd05pNHhNRFV3TkRnck1EQTZNREItTUM0NE5qazJPVE0wTXpNMk5EZC0='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNjoxNDoxOC43NjYxNzIrMDA6MDB-MC41NzIxMjkxMTMyMn4', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NWMxNmU3Zjk2MmZhYzY0NWMxMWJiZDI0ZjYxYjM5YWFiNzczMmM3Zjpub25jZT0zMDQ3NzUmY3JlYXRlX3RpbWU9MTM0MzgwMTk4MyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOam94TkRveE9DNDNOall4TnpJck1EQTZNREItTUM0MU56SXhNamt4TVRNeU1uNA=='}

@@ -19,10 +19,12 @@ from django.utils import simplejson
 
 from apns import APNs, Payload
 
+import OpenTokSDK
+
 from video.models import Users
 
 # Initialize logging
-logging.basicConfig(filename='server.log',level=logging.DEBUG)
+logging.basicConfig(filename='server.log',level=logging.INFO)
 
 # The container to record call requests
 callDict = dict()
@@ -65,44 +67,41 @@ def putInterpreter():
 # TODO It's a better idea to create a tokbox session id for him
 # when logging in since it take quite a while to obtain it.
 def requestLoginWithUsername(request):
+    """
+        Authenticate a login request.
+
+        If it is a legal one, a push token(for iOS device) will also be generated
+        and stored in the database.
+    """
+
     if request.method == 'POST' :
         username = request.POST['username']
         password = request.POST['password']
-        logging.log(username, password)
+        logging.info("login request: %s, %s", (username, password))
         #
         cursor.execute("select * from users where name=%s and loginpassword=%s", ( username, password ) )
         m = cursor.fetchall()
         #
         if m[0][1]==username and m[0][4]==password:
             #
-            # First of all, generate a session and a token for him
-            #
-            session_address = request.META['REMOTE_ADDR']
-            logging.debug('IP address: %s', session_address)
-            # TODO WRAP needed
-            api_key = '16693682'
-            api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
-            opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=True)
-            videoSession = opentok_sdk.create_session(session_address)
-            videoToken = opentok_sdk.generate_token(videoSession.session_id)
-            cursor.execute("update users set seesion_id=%s where name=%s", (videoSession.session_id, username))
-            cursor.execute("update users set tokbox_token=%s where name=%s", (videoToken, username))
-            logging.debug('session_id: %s', videoSession.session_id)
-            logging.debug('token: %s', videoToken)
-            #
             # Generate a push token
-            pushToken = request.POST['pushToken']
+            pushToken = ''
+            try:
+                # iOS front-end
+                pushToken = request.POST['pushToken']
+            except:
+                # Web front-end
+                pass
             logging.debug("Generated pushToken: %s", pushToken)
             cursor.execute("update users set pushToken=%s where name=%s", (pushToken, username))
             #
             # Generate the login success mesage
             to_json = {
                     "requestType": "login",         # ca be banned since pushing is not necessary in this method
+                    "username": username,
                     "message": "success",
                     # "myInfo": getMyInfo(username) # should be bannd. One method should do only one thing.
                     }
-            logging.log(to_json)
-            cursor.execute("update users set loginpassword=%s where name=%s", (newpassword, username))
         else:
             #
             # Generate the login fail mesage
@@ -112,10 +111,47 @@ def requestLoginWithUsername(request):
                      }
         #
         response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
+        logging.info("response: %s", to_json)
     else:
         response = HttpResponse("Error!")
     #
     # TODO WRAP
+    response['Access-Control-Allow-Origin']='*'
+    return response
+
+#
+# NEW Method
+#
+def requestSessionWithUsername(request):
+    """
+        Generate and return the coresponding session ID and token.
+
+    """
+    #
+    # generate a session and a token for him
+    username = request.POST['username']
+    logging.info("session and token request: %s", username)
+    session_address = request.POST['address']
+    logging.debug('IP address: %s', session_address)
+    # TODO WRAP needed
+    api_key = '16693682'
+    api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
+    opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=True)
+    videoSession = opentok_sdk.create_session(session_address)
+    videoToken = opentok_sdk.generate_token(videoSession.session_id)
+    cursor.execute("update users set session_id=%s where name=%s", (videoSession.session_id, username))
+    cursor.execute("update users set tokbox_token=%s where name=%s", (videoToken, username))
+    logging.debug('session_id: %s', videoSession.session_id)
+    logging.debug('token: %s', videoToken)
+    #
+    to_json = {
+             "requestType": "session",
+             "sessionID": videoSession.session_id,
+             "token": videoToken,
+             }
+    response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
+    logging.info("response: %s", to_json)
+
     response['Access-Control-Allow-Origin']='*'
     return response
 
@@ -282,14 +318,14 @@ def answerVideoCallWithUsername(request):
             # Then there's a call comming
             #
             # First obtain the caller's tokbox session id
-            cursor.execute("select sessionID from users where name=%s", username)
+            cursor.execute("select session_id from users where name=%s", callDict[username])
             sessionID = cursor.fetchall()
             # Then response with it
-            to_json = ['sessionID':sessionID]
+            to_json = {'sessionID':sessionID}
         else:
             #
             # There's no comming call
-            to_json = ['sessionID':'']
+            to_json = {'sessionID':''}
 
         response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
     else:
