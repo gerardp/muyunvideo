@@ -319,13 +319,13 @@ def answerVideoCallWithUsername(request):
             #
             # First obtain the caller's tokbox session id
             cursor.execute("select session_id from users where name=%s", callDict[username])
-            sessionID = cursor.fetchall()
+            session_id = cursor.fetchall()
             # Then response with it
-            to_json = {'sessionID':sessionID}
+            to_json = {'session_id':session_id}
         else:
             #
             # There's no comming call
-            to_json = {'sessionID':''}
+            to_json = {'session_id':''}
 
         response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
     else:
