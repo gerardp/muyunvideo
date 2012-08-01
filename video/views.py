@@ -87,6 +87,8 @@ def requestLoginWithUsername(request):
             videoToken = opentok_sdk.generate_token(videoSession.session_id)
             cursor.execute("update users set seesion_id=%s where name=%s", (videoSession.session_id, username))
             cursor.execute("update users set tokbox_token=%s where name=%s", (videoToken, username))
+            logging.debug('session_id: %s', videoSession.session_id)
+            logging.debug('token: %s', videoToken)
             #
             # Generate a push token
             pushToken = request.POST['pushToken']
