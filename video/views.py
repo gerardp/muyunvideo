@@ -137,7 +137,7 @@ def requestSessionWithUsername(request):
     #api_key = '16693682'
     api_key = '16937882'
     #api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
-    api_secret = ''
+    api_secret = 'fb8c4ec59099e592bd862f2c018f704c80a7eac3'
     opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=True)
     videoSession = opentok_sdk.create_session(session_address)
     videoToken = opentok_sdk.generate_token(videoSession.session_id)
