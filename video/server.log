@@ -253,3 +253,2333 @@ INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4x
 INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
 INFO:root:session and token request: ddmbr
 INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNjoxNDoxOC43NjYxNzIrMDA6MDB-MC41NzIxMjkxMTMyMn4', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NWMxNmU3Zjk2MmZhYzY0NWMxMWJiZDI0ZjYxYjM5YWFiNzczMmM3Zjpub25jZT0zMDQ3NzUmY3JlYXRlX3RpbWU9MTM0MzgwMTk4MyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOam94TkRveE9DNDNOall4TnpJck1EQTZNREItTUM0MU56SXhNamt4TVRNeU1uNA=='}
+ERROR:django.request:Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 85, in requestLoginWithUsername
+    if m[0][1]==username and m[0][4]==password:
+IndexError: tuple index out of range
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDoyMjozMCBQRFQgMjAxMn4wLjU4NzM5NDI', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZWMwNTMxNGNiMGE4YzljZjI3MmYxZDJiOTBmM2QyMDZmMjY2M2QxNDpub25jZT02NjQ3OTQmY3JlYXRlX3RpbWU9MTM0MzgwNjA3NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG95TWpvek1DQlFSRlFnTWpBeE1uNHdMalU0TnpNNU5ESQ=='}
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDoyNDowNSBQRFQgMjAxMn4wLjQ3MjIxODQ1', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjA3ZGFmMTRiYmRjYmFmYmYzMGM3ZjBkMDExY2ZjNzMzNDZmOTAzMzpub25jZT04MDI4MzImY3JlYXRlX3RpbWU9MTM0MzgwNjE3MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG95TkRvd05TQlFSRlFnTWpBeE1uNHdMalEzTWpJeE9EUTE='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDoyNDozMSBQRFQgMjAxMn4wLjM5NTQ4ODk4', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Y2RmYjRlNDdlZjcxOGQzNzEyYzlmZjQyZWYxZWQ3ZGQ5MjY5YjEyMTpub25jZT05OTAxODEmY3JlYXRlX3RpbWU9MTM0MzgwNjE5NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG95TkRvek1TQlFSRlFnTWpBeE1uNHdMak01TlRRNE9EazQ='}
+ERROR:django.request:Internal Server Error: /videoCallTo/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 270, in requestVideoCallWithUsername
+    callToUsername = request.POST['callToUserName']
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/datastructures.py", line 258, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'callToUserName' not found in <QueryDict: {u'username': [u'ddmbr'], u'callToUsername': [u' OMeGa']}>"
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDoyNjoxNSBQRFQgMjAxMn4wLjk2NTU1MDg0', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MTBmZmM3NjMwYzA0ZTU3Mzc2NjY0MDhlMWQ1NzgzNjc5N2IzNzRhMzpub25jZT04OTk3MDYmY3JlYXRlX3RpbWU9MTM0MzgwNjMwMCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG95TmpveE5TQlFSRlFnTWpBeE1uNHdMamsyTlRVMU1EZzA='}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDoyNjoxOCBQRFQgMjAxMn4wLjU5NzA0MDU', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZTBhMGU1NThmZDQ0ZTZjOTk4N2FkZjkxZTk1OGRjODczNDc1MmE0Mzpub25jZT0zOTg0NDMmY3JlYXRlX3RpbWU9MTM0MzgwNjMwMyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG95TmpveE9DQlFSRlFnTWpBeE1uNHdMalU1TnpBME1EVQ=='}
+ERROR:django.request:Internal Server Error: /videoCallTo/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 281, in requestVideoCallWithUsername
+    if callToUser in callDict:
+NameError: global name 'callToUser' is not defined
+ERROR:django.request:Internal Server Error: /videoCallTo/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 281, in requestVideoCallWithUsername
+    if callToUser in callDict:
+NameError: global name 'callToUser' is not defined
+ERROR:django.request:Internal Server Error: /videoCallTo/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/muyunvideo/video/views.py", line 281, in requestVideoCallWithUsername
+    if callToUser in callDict:
+NameError: global name 'callToUser' is not defined
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDoyODoxMyBQRFQgMjAxMn4wLjI3Mjg1NjA2', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ODMwYTQxMTMyNjk5Y2QwZmI4OTVjODU2ZWVhYzFmM2YyOTEzMzhlMDpub25jZT0yNjIxNTMmY3JlYXRlX3RpbWU9MTM0MzgwNjQxOCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG95T0RveE15QlFSRlFnTWpBeE1uNHdMakkzTWpnMU5qQTI='}
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzoyODoxOS40OTE3NTQrMDA6MDB-MC42MzIwMDMzMjE5OTh-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjFkYTQyNDk5YjE2NTEyOTUxY2ZkMTdiNzA0ZjIyMTFjMmI3YzUxMzpub25jZT01MzMyNDMmY3JlYXRlX3RpbWU9MTM0MzgwNjQyNCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem95T0RveE9TNDBPVEUzTlRRck1EQTZNREItTUM0Mk16SXdNRE16TWpFNU9UaC0='}
+ERROR:django.request:Internal Server Error: /videoCallTo/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view video.views.requestVideoCallWithUsername didn't return an HttpResponse object.
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzozMjozOS42MDU2MTIrMDA6MDB-MC4wNTQ3OTI0NTAwMjU5fg', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZTFkZGM3NWI4NTI5MmQwOThiYTA0N2RlOGE0ZGE0Zjc4OTE1OThhMzpub25jZT0zNzM4NTcmY3JlYXRlX3RpbWU9MTM0MzgwNjY4NCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem96TWpvek9TNDJNRFUyTVRJck1EQTZNREItTUM0d05UUTNPVEkwTlRBd01qVTVmZw=='}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzozMjo0MS44ODY2NjUrMDA6MDB-MC45NDc2NDYyMzMxMTl-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ODg5YTczMmFjMDdmZWE2NDg2MjY1ZmQ5MGI0NjQwZDQ3MmEwOTg5NDpub25jZT02Mzc0ODkmY3JlYXRlX3RpbWU9MTM0MzgwNjY4NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem96TWpvME1TNDRPRFkyTmpVck1EQTZNREItTUM0NU5EYzJORFl5TXpNeE1UbC0='}
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'sessionID': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzozNDowNC44NTE3OTErMDA6MDB-MC40NDE5MzY5MzkxMjZ-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YTU0YjA0YWQ1OGM3ZGY3NjgyNTRiMWJjY2ZkOGUxYWM2OTkxZGZmMjpub25jZT0xMTI0NzImY3JlYXRlX3RpbWU9MTM0MzgwNjc2OSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem96TkRvd05DNDROVEUzT1RFck1EQTZNREItTUM0ME5ERTVNelk1TXpreE1qWi0='}
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'sessionID': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzozNDoxMS44ODU3MDQrMDA6MDB-MC44NTk2OTk5NTUwMzV-', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzViNjU0ZjYyMjAyNDYwZDc3OTAxMDAzZTY3ZTk5OGNmMTg1ZGNlNzpub25jZT0zMjIwMTcmY3JlYXRlX3RpbWU9MTM0MzgwNjc3NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem96TkRveE1TNDRPRFUzTURRck1EQTZNREItTUM0NE5UazJPVGs1TlRVd016Vi0='}
+INFO:root:login request: OMeGa, test
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzBhOTU3ZGMzZTdkOTk1MDg5MzdkNzBhMzFjMzMyMzMwYjExNTI1Mjpub25jZT01MDYyNTMmY3JlYXRlX3RpbWU9MTM0MzgwNzMzMiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wTXpveU55QlFSRlFnTWpBeE1uNHdMalV3TVRjd05qYw==', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0MzoyNyBQRFQgMjAxMn4wLjUwMTcwNjc'}
+INFO:root:login request: ddmbr, 123
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Yjk4YTJlYTQ3MjRkZTg2MThjN2FkZDk4NDYyMGMzZjU0ZjBhMTRjMDpub25jZT01MjY3MDAmY3JlYXRlX3RpbWU9MTM0MzgwNzMzNCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wTXpveU9TQlFSRlFnTWpBeE1uNHdMak01TkRNME16azM=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0MzoyOSBQRFQgMjAxMn4wLjM5NDM0Mzk3'}
+INFO:root:ddmbr want to start a conference with  OMeGa
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0NToyMCBQRFQgMjAxMn4wLjk3MjI0Nw
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9OTgxZTQyZDRhNzIxMWFhOGVhMWI0Y2Y4NGJmM2I3ZjgyZGJkZWE3YTpub25jZT0yNDgwODMmY3JlYXRlX3RpbWU9MTM0MzgwNzQ0NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wTlRveU1DQlFSRlFnTWpBeE1uNHdMamszTWpJME53
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9OTgxZTQyZDRhNzIxMWFhOGVhMWI0Y2Y4NGJmM2I3ZjgyZGJkZWE3YTpub25jZT0yNDgwODMmY3JlYXRlX3RpbWU9MTM0MzgwNzQ0NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wTlRveU1DQlFSRlFnTWpBeE1uNHdMamszTWpJME53', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0NToyMCBQRFQgMjAxMn4wLjk3MjI0Nw'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0NToyNSBQRFQgMjAxMn4wLjQwMzc4NjEy
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjVhNTExZmFiNzNlMTIwZDFhOGNkNjE2ZjRjNTZhYTBmOWQ2MDdhNzpub25jZT0zMjQ5NjcmY3JlYXRlX3RpbWU9MTM0MzgwNzQ1MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wTlRveU5TQlFSRlFnTWpBeE1uNHdMalF3TXpjNE5qRXk=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjVhNTExZmFiNzNlMTIwZDFhOGNkNjE2ZjRjNTZhYTBmOWQ2MDdhNzpub25jZT0zMjQ5NjcmY3JlYXRlX3RpbWU9MTM0MzgwNzQ1MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wTlRveU5TQlFSRlFnTWpBeE1uNHdMalF3TXpjNE5qRXk=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0NToyNSBQRFQgMjAxMn4wLjQwMzc4NjEy'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with  OMeGa
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0ODo0MiBQRFQgMjAxMn4wLjc2OTM0Njk
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MDA3YzkxMmI4YjYxYzAwNTA3ODg3MTZkYTUxZDdhOGY5ZWM5NjUxZDpub25jZT0xNjUxNjUmY3JlYXRlX3RpbWU9MTM0MzgwNzY0NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wT0RvME1pQlFSRlFnTWpBeE1uNHdMamMyT1RNME5qaw==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MDA3YzkxMmI4YjYxYzAwNTA3ODg3MTZkYTUxZDdhOGY5ZWM5NjUxZDpub25jZT0xNjUxNjUmY3JlYXRlX3RpbWU9MTM0MzgwNzY0NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wT0RvME1pQlFSRlFnTWpBeE1uNHdMamMyT1RNME5qaw==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0ODo0MiBQRFQgMjAxMn4wLjc2OTM0Njk'}
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo0ODo0Ni4yNDU5OTgrMDA6MDB-MC4wMTUyNTM5NjkwMDUyfg
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NTBkMTM2YWRjNzM3ZGRlMmRiMDI3NGQ0YmVmZTFlM2NkZTA4OWRhMzpub25jZT00Mzk3OTAmY3JlYXRlX3RpbWU9MTM0MzgwNzY1MSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8wT0RvME5pNHlORFU1T1Rnck1EQTZNREItTUM0d01UVXlOVE01Tmprd01EVXlmZw==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NTBkMTM2YWRjNzM3ZGRlMmRiMDI3NGQ0YmVmZTFlM2NkZTA4OWRhMzpub25jZT00Mzk3OTAmY3JlYXRlX3RpbWU9MTM0MzgwNzY1MSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8wT0RvME5pNHlORFU1T1Rnck1EQTZNREItTUM0d01UVXlOVE01Tmprd01EVXlmZw==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo0ODo0Ni4yNDU5OTgrMDA6MDB-MC4wMTUyNTM5NjkwMDUyfg'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0OTo0MCBQRFQgMjAxMn4wLjg3MTM4NTkz
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MjI4OWYyMTc4OTVkYjI1NTg3YTM4YTAyYjY0ZmVjNmY4MDdiMmYwODpub25jZT0xNzQxNDAmY3JlYXRlX3RpbWU9MTM0MzgwNzcwNSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wT1RvME1DQlFSRlFnTWpBeE1uNHdMamczTVRNNE5Ua3o=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MjI4OWYyMTc4OTVkYjI1NTg3YTM4YTAyYjY0ZmVjNmY4MDdiMmYwODpub25jZT0xNzQxNDAmY3JlYXRlX3RpbWU9MTM0MzgwNzcwNSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8wT1RvME1DQlFSRlFnTWpBeE1uNHdMamczTVRNNE5Ua3o=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo0OTo0MCBQRFQgMjAxMn4wLjg3MTM4NTkz'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo0OTo0Mi42NzkxNDArMDA6MDB-MC40OTg5MTI1MzE1ODV-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjgyNjA5ODEzM2E0NmUyNjEyM2IzMmY3ZTNhNzI2ZGUzMTAxZWRmYzpub25jZT0xNDI5OTkmY3JlYXRlX3RpbWU9MTM0MzgwNzcwNyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8wT1RvME1pNDJOemt4TkRBck1EQTZNREItTUM0ME9UZzVNVEkxTXpFMU9EVi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjgyNjA5ODEzM2E0NmUyNjEyM2IzMmY3ZTNhNzI2ZGUzMTAxZWRmYzpub25jZT0xNDI5OTkmY3JlYXRlX3RpbWU9MTM0MzgwNzcwNyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8wT1RvME1pNDJOemt4TkRBck1EQTZNREItTUM0ME9UZzVNVEkxTXpFMU9EVi0=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo0OTo0Mi42NzkxNDArMDA6MDB-MC40OTg5MTI1MzE1ODV-'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:OMeGa get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1MjozMS41OTQ4NjUrMDA6MDB-MC4zNTQzNDE4OTU1Mn4
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9M2VlZWUwNWZlOWQ4NTkyNmVlMWQyYTg1YmMyZGIyYjg4OGIyMjlkMzpub25jZT00MTg1MzcmY3JlYXRlX3RpbWU9MTM0MzgwNzg3NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTWpvek1TNDFPVFE0TmpVck1EQTZNREItTUM0ek5UUXpOREU0T1RVMU1uNA==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9M2VlZWUwNWZlOWQ4NTkyNmVlMWQyYTg1YmMyZGIyYjg4OGIyMjlkMzpub25jZT00MTg1MzcmY3JlYXRlX3RpbWU9MTM0MzgwNzg3NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTWpvek1TNDFPVFE0TmpVck1EQTZNREItTUM0ek5UUXpOREU0T1RVMU1uNA==', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1MjozMS41OTQ4NjUrMDA6MDB-MC4zNTQzNDE4OTU1Mn4'}
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo1MjozMyBQRFQgMjAxMn4wLjQ1NTc5ODg2
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MTlkY2RmODMxOTkyMTI3ZmIyYThiN2YwYzliMjQzMzZmNTY5YzYzNTpub25jZT02MjY1OTEmY3JlYXRlX3RpbWU9MTM0MzgwNzg3OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8xTWpvek15QlFSRlFnTWpBeE1uNHdMalExTlRjNU9EZzI=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MTlkY2RmODMxOTkyMTI3ZmIyYThiN2YwYzliMjQzMzZmNTY5YzYzNTpub25jZT02MjY1OTEmY3JlYXRlX3RpbWU9MTM0MzgwNzg3OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNRG8xTWpvek15QlFSRlFnTWpBeE1uNHdMalExTlRjNU9EZzI=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMDo1MjozMyBQRFQgMjAxMn4wLjQ1NTc5ODg2'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDoxNS43NTAyNjMrMDA6MDB-MC40Nzc3MzgwODk2MjV-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzgzMTU3Yjc5ZGUxYzE1MmMzOGQ0Y2QzZmNjMmQ4Y2Q0OGU4ZGZlOTpub25jZT0yNDMwOTEmY3JlYXRlX3RpbWU9MTM0MzgwNzk4MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRveE5TNDNOVEF5TmpNck1EQTZNREItTUM0ME56YzNNemd3T0RrMk1qVi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzgzMTU3Yjc5ZGUxYzE1MmMzOGQ0Y2QzZmNjMmQ4Y2Q0OGU4ZGZlOTpub25jZT0yNDMwOTEmY3JlYXRlX3RpbWU9MTM0MzgwNzk4MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRveE5TNDNOVEF5TmpNck1EQTZNREItTUM0ME56YzNNemd3T0RrMk1qVi0=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDoxNS43NTAyNjMrMDA6MDB-MC40Nzc3MzgwODk2MjV-'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDoxNi4xODcwMzMrMDA6MDB-MC45Mzg5NjkzNzg2MTV-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NGFjZmI2MjYyOGIwYTRkNzAwY2FkYmJjZGFjZDhlYjNhZTUwYTQ3MTpub25jZT0zODY3ODUmY3JlYXRlX3RpbWU9MTM0MzgwNzk4MSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRveE5pNHhPRGN3TXpNck1EQTZNREItTUM0NU16ZzVOamt6TnpnMk1UVi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NGFjZmI2MjYyOGIwYTRkNzAwY2FkYmJjZGFjZDhlYjNhZTUwYTQ3MTpub25jZT0zODY3ODUmY3JlYXRlX3RpbWU9MTM0MzgwNzk4MSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRveE5pNHhPRGN3TXpNck1EQTZNREItTUM0NU16ZzVOamt6TnpnMk1UVi0=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDoxNi4xODcwMzMrMDA6MDB-MC45Mzg5NjkzNzg2MTV-'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDo1Mi44MjY1ODIrMDA6MDB-MC42Mjc4NzQ1NTg4NTl-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZWRlMDA0ZGMwMjllMzdmNGJiNzYyNjQ5Y2QzYmE0NmIzMjVlZTViMTpub25jZT01NjQwOTcmY3JlYXRlX3RpbWU9MTM0MzgwODAxNyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRvMU1pNDRNalkxT0RJck1EQTZNREItTUM0Mk1qYzROelExTlRnNE5UbC0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZWRlMDA0ZGMwMjllMzdmNGJiNzYyNjQ5Y2QzYmE0NmIzMjVlZTViMTpub25jZT01NjQwOTcmY3JlYXRlX3RpbWU9MTM0MzgwODAxNyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRvMU1pNDRNalkxT0RJck1EQTZNREItTUM0Mk1qYzROelExTlRnNE5UbC0=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDo1Mi44MjY1ODIrMDA6MDB-MC42Mjc4NzQ1NTg4NTl-'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDo1NC44NDI2NTArMDA6MDB-MC4zMjY4OTQ1NzAzMzF-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZDEzMmUwOTg4NDI5ZTU2MzI3ZWZkYjIzZTM3MWVmY2U3NmUzY2VmNTpub25jZT04ODMyMzgmY3JlYXRlX3RpbWU9MTM0MzgwODAxOSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRvMU5DNDROREkyTlRBck1EQTZNREItTUM0ek1qWTRPVFExTnpBek16Ri0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZDEzMmUwOTg4NDI5ZTU2MzI3ZWZkYjIzZTM3MWVmY2U3NmUzY2VmNTpub25jZT04ODMyMzgmY3JlYXRlX3RpbWU9MTM0MzgwODAxOSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTkRvMU5DNDROREkyTlRBck1EQTZNREItTUM0ek1qWTRPVFExTnpBek16Ri0=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1NDo1NC44NDI2NTArMDA6MDB-MC4zMjY4OTQ1NzAzMzF-'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1Njo1NC4xOTYyNjArMDA6MDB-MC45OTk5ODMwMDgwNX4
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Nzk1OGEwNTMxMmE5YmJlNTg1ZjljOWM1MDhmMDRmOTlhYWM5ZjhhZTpub25jZT04Mjk3NjAmY3JlYXRlX3RpbWU9MTM0MzgwODEzOSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTmpvMU5DNHhPVFl5TmpBck1EQTZNREItTUM0NU9UazVPRE13TURnd05YNA==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Nzk1OGEwNTMxMmE5YmJlNTg1ZjljOWM1MDhmMDRmOTlhYWM5ZjhhZTpub25jZT04Mjk3NjAmY3JlYXRlX3RpbWU9MTM0MzgwODEzOSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTmpvMU5DNHhPVFl5TmpBck1EQTZNREItTUM0NU9UazVPRE13TURnd05YNA==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1Njo1NC4xOTYyNjArMDA6MDB-MC45OTk5ODMwMDgwNX4'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1Njo1NS40NDEzMTErMDA6MDB-MC4zODAxMjczMTYyMjR-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9N2M0ODgyMTEwZjY1NDY5ZTM1MWZjMmMyN2EzYzQxODMxZjQ5ZjIyMDpub25jZT02MDkzNjQmY3JlYXRlX3RpbWU9MTM0MzgwODE0MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTmpvMU5TNDBOREV6TVRFck1EQTZNREItTUM0ek9EQXhNamN6TVRZeU1qUi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9N2M0ODgyMTEwZjY1NDY5ZTM1MWZjMmMyN2EzYzQxODMxZjQ5ZjIyMDpub25jZT02MDkzNjQmY3JlYXRlX3RpbWU9MTM0MzgwODE0MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdOem8xTmpvMU5TNDBOREV6TVRFck1EQTZNREItTUM0ek9EQXhNamN6TVRZeU1qUi0=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwNzo1Njo1NS40NDEzMTErMDA6MDB-MC4zODAxMjczMTYyMjR-'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowNDoxMC4wNzcyMDArMDA6MDB-MC40MTI5MTEwMzY5MDJ-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9M2QyZWMxZWMxYmUzMTJiNTRhZmY2ZmY5MDgzNTllZjc1OTU0YzcyZjpub25jZT02ODYxNjEmY3JlYXRlX3RpbWU9MTM0MzgwODU3NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93TkRveE1DNHdOemN5TURBck1EQTZNREItTUM0ME1USTVNVEV3TXpZNU1ESi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9M2QyZWMxZWMxYmUzMTJiNTRhZmY2ZmY5MDgzNTllZjc1OTU0YzcyZjpub25jZT02ODYxNjEmY3JlYXRlX3RpbWU9MTM0MzgwODU3NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93TkRveE1DNHdOemN5TURBck1EQTZNREItTUM0ME1USTVNVEV3TXpZNU1ESi0=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowNDoxMC4wNzcyMDArMDA6MDB-MC40MTI5MTEwMzY5MDJ-'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowNDoxMC40NTQwNDQrMDA6MDB-MC4wNzM1MTUzMDUzMzIxfg
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MTVmNjk3NmI3YjNkOGEyZDI0YjQyYTBjMmJmOTUyNmUyOTA2MmQxZTpub25jZT00NTk0OTEmY3JlYXRlX3RpbWU9MTM0MzgwODU3NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93TkRveE1DNDBOVFF3TkRRck1EQTZNREItTUM0d056TTFNVFV6TURVek16SXhmZw==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MTVmNjk3NmI3YjNkOGEyZDI0YjQyYTBjMmJmOTUyNmUyOTA2MmQxZTpub25jZT00NTk0OTEmY3JlYXRlX3RpbWU9MTM0MzgwODU3NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93TkRveE1DNDBOVFF3TkRRck1EQTZNREItTUM0d056TTFNVFV6TURVek16SXhmZw==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowNDoxMC40NTQwNDQrMDA6MDB-MC4wNzM1MTUzMDUzMzIxfg'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowNzozMy4wNDA4NzcrMDA6MDB-MC41NjgzMzU5OTIwNDl-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YmVlMWEyN2ZmNmRlNjVkNjAyODE1NmY1NDg0ZGQxODIwN2EzODMzZjpub25jZT04MjY3NiZjcmVhdGVfdGltZT0xMzQzODA4Nzc4JnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9Ml9NWDR4TmpZNU16WTRNbjR4TWpjdU1DNHdMakYtTWpBeE1pMHdPQzB3TVNBd09Eb3dOem96TXk0d05EQTROemNyTURBNk1EQi1NQzQxTmpnek16VTVPVEl3TkRsLQ==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YmVlMWEyN2ZmNmRlNjVkNjAyODE1NmY1NDg0ZGQxODIwN2EzODMzZjpub25jZT04MjY3NiZjcmVhdGVfdGltZT0xMzQzODA4Nzc4JnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9Ml9NWDR4TmpZNU16WTRNbjR4TWpjdU1DNHdMakYtTWpBeE1pMHdPQzB3TVNBd09Eb3dOem96TXk0d05EQTROemNyTURBNk1EQi1NQzQxTmpnek16VTVPVEl3TkRsLQ==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowNzozMy4wNDA4NzcrMDA6MDB-MC41NjgzMzU5OTIwNDl-'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTowNzozNCBQRFQgMjAxMn4wLjg0MzQ2
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NjAwYjU0ODY5YmI0MTI3MjI5MWYyZTQyOGZkYjU1YTNlM2QxODcwZjpub25jZT01OTI5MzQmY3JlYXRlX3RpbWU9MTM0MzgwODc3OSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG93Tnpvek5DQlFSRlFnTWpBeE1uNHdMamcwTXpRMg==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NjAwYjU0ODY5YmI0MTI3MjI5MWYyZTQyOGZkYjU1YTNlM2QxODcwZjpub25jZT01OTI5MzQmY3JlYXRlX3RpbWU9MTM0MzgwODc3OSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG93Tnpvek5DQlFSRlFnTWpBeE1uNHdMamcwTXpRMg==', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTowNzozNCBQRFQgMjAxMn4wLjg0MzQ2'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowODoyMi41MjM2NTQrMDA6MDB-MC44NTYwMDc2MzU2OTJ-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzU3MGU3MjQyYzc5NDcwYThkNzIxYTIzZjVjMWVmZjFiMWRhYzljMTpub25jZT03NzQ1MzkmY3JlYXRlX3RpbWU9MTM0MzgwODgyNyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93T0RveU1pNDFNak0yTlRRck1EQTZNREItTUM0NE5UWXdNRGMyTXpVMk9USi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzU3MGU3MjQyYzc5NDcwYThkNzIxYTIzZjVjMWVmZjFiMWRhYzljMTpub25jZT03NzQ1MzkmY3JlYXRlX3RpbWU9MTM0MzgwODgyNyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93T0RveU1pNDFNak0yTlRRck1EQTZNREItTUM0NE5UWXdNRGMyTXpVMk9USi0=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowODoyMi41MjM2NTQrMDA6MDB-MC44NTYwMDc2MzU2OTJ-'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowODoyNi4zNTY4MzcrMDA6MDB-MC43NTAwNDIwMTE4OTV-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZWU1MDU0YjczM2QwN2EwNzZmM2EyYzBkM2UzYTM3NmJmMWFiYTY5NTpub25jZT03MjU1MDYmY3JlYXRlX3RpbWU9MTM0MzgwODgzMSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93T0RveU5pNHpOVFk0TXpjck1EQTZNREItTUM0M05UQXdOREl3TVRFNE9UVi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZWU1MDU0YjczM2QwN2EwNzZmM2EyYzBkM2UzYTM3NmJmMWFiYTY5NTpub25jZT03MjU1MDYmY3JlYXRlX3RpbWU9MTM0MzgwODgzMSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG93T0RveU5pNHpOVFk0TXpjck1EQTZNREItTUM0M05UQXdOREl3TVRFNE9UVi0=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODowODoyNi4zNTY4MzcrMDA6MDB-MC43NTAwNDIwMTE4OTV-'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTowOTozMyBQRFQgMjAxMn4wLjU5ODQ2NzIz
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Zjc3N2IwZTdhNDQyNTM2YmRlZjdmMDY2ZjY2YmMxODViOTFkMjQyZTpub25jZT02MDQ3ODYmY3JlYXRlX3RpbWU9MTM0MzgwODg5OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG93T1Rvek15QlFSRlFnTWpBeE1uNHdMalU1T0RRMk56SXo=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Zjc3N2IwZTdhNDQyNTM2YmRlZjdmMDY2ZjY2YmMxODViOTFkMjQyZTpub25jZT02MDQ3ODYmY3JlYXRlX3RpbWU9MTM0MzgwODg5OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG93T1Rvek15QlFSRlFnTWpBeE1uNHdMalU1T0RRMk56SXo=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTowOTozMyBQRFQgMjAxMn4wLjU5ODQ2NzIz'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTowOTozNyBQRFQgMjAxMn4wLjQwNjA5NTc0
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzlkMWVkMGJiOThlNGU2NzFkNjI0YzI1OWJmMjAzNzM2NzVmNGY3Yzpub25jZT05MDUwMjcmY3JlYXRlX3RpbWU9MTM0MzgwODkwMiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG93T1Rvek55QlFSRlFnTWpBeE1uNHdMalF3TmpBNU5UYzA=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzlkMWVkMGJiOThlNGU2NzFkNjI0YzI1OWJmMjAzNzM2NzVmNGY3Yzpub25jZT05MDUwMjcmY3JlYXRlX3RpbWU9MTM0MzgwODkwMiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG93T1Rvek55QlFSRlFnTWpBeE1uNHdMalF3TmpBNU5UYzA=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTowOTozNyBQRFQgMjAxMn4wLjQwNjA5NTc0'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMToxMToxMiBQRFQgMjAxMn4wLjQ1NDI1MTc3
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NDdlNTdjOGFhNjA3MmY4NDYyOTUzY2I0NTljMTYxNTUxZmIwNDFlZjpub25jZT05MjY3MzgmY3JlYXRlX3RpbWU9MTM0MzgwODk5NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG94TVRveE1pQlFSRlFnTWpBeE1uNHdMalExTkRJMU1UYzM=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NDdlNTdjOGFhNjA3MmY4NDYyOTUzY2I0NTljMTYxNTUxZmIwNDFlZjpub25jZT05MjY3MzgmY3JlYXRlX3RpbWU9MTM0MzgwODk5NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG94TVRveE1pQlFSRlFnTWpBeE1uNHdMalExTkRJMU1UYzM=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMToxMToxMiBQRFQgMjAxMn4wLjQ1NDI1MTc3'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMToxMToxMyBQRFQgMjAxMn4wLjk2MzE0NDk2
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YmUyNzRiMWZhMzhjZTljOWJmN2Q1NDBlODM0MjY5MzlkM2Q1OWI2ZTpub25jZT00ODQxNzgmY3JlYXRlX3RpbWU9MTM0MzgwODk5OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG94TVRveE15QlFSRlFnTWpBeE1uNHdMamsyTXpFME5EazI=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YmUyNzRiMWZhMzhjZTljOWJmN2Q1NDBlODM0MjY5MzlkM2Q1OWI2ZTpub25jZT00ODQxNzgmY3JlYXRlX3RpbWU9MTM0MzgwODk5OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG94TVRveE15QlFSRlFnTWpBeE1uNHdMamsyTXpFME5EazI=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMToxMToxMyBQRFQgMjAxMn4wLjk2MzE0NDk2'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoxNzoxNi42MzM5ODErMDA6MDB-MC43MDM1MzQwMjc1OTh-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Y2Y4MjAxZmJmNDIyNDA1MzE4N2MxNjE3ZDVjYWM5ZDA3Nzg5ZTdjODpub25jZT0xNTg5MzYmY3JlYXRlX3RpbWU9MTM0MzgwOTM2MSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG94TnpveE5pNDJNek01T0RFck1EQTZNREItTUM0M01ETTFNelF3TWpjMU9UaC0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9Y2Y4MjAxZmJmNDIyNDA1MzE4N2MxNjE3ZDVjYWM5ZDA3Nzg5ZTdjODpub25jZT0xNTg5MzYmY3JlYXRlX3RpbWU9MTM0MzgwOTM2MSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG94TnpveE5pNDJNek01T0RFck1EQTZNREItTUM0M01ETTFNelF3TWpjMU9UaC0=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoxNzoxNi42MzM5ODErMDA6MDB-MC43MDM1MzQwMjc1OTh-'}
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoxNzoyMi45Mjc5ODArMDA6MDB-MC42MDQwMjA4OTQwNjh-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YTZhZDM4NzFkOTNkOGVlYzMxNzUxM2I4ZWZlZWUyMTM4NmE2OWQxNzpub25jZT01NDU4NjgmY3JlYXRlX3RpbWU9MTM0MzgwOTM2OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG94TnpveU1pNDVNamM1T0RBck1EQTZNREItTUM0Mk1EUXdNakE0T1RRd05qaC0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YTZhZDM4NzFkOTNkOGVlYzMxNzUxM2I4ZWZlZWUyMTM4NmE2OWQxNzpub25jZT01NDU4NjgmY3JlYXRlX3RpbWU9MTM0MzgwOTM2OCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG94TnpveU1pNDVNamM1T0RBck1EQTZNREItTUM0Mk1EUXdNakE0T1RRd05qaC0=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoxNzoyMi45Mjc5ODArMDA6MDB-MC42MDQwMjA4OTQwNjh-'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoyMjowOC45NjU3MDErMDA6MDB-MC42NTcyODc0Nzc5Mjh-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NTk1YmVmMjA1Mzk2YjgyOTIzY2UxYjRmZDYyZWY2MWUyNWM1NzQ0MDpub25jZT0yOTc1MzEmY3JlYXRlX3RpbWU9MTM0MzgwOTY1NCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG95TWpvd09DNDVOalUzTURFck1EQTZNREItTUM0Mk5UY3lPRGMwTnpjNU1qaC0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9NTk1YmVmMjA1Mzk2YjgyOTIzY2UxYjRmZDYyZWY2MWUyNWM1NzQ0MDpub25jZT0yOTc1MzEmY3JlYXRlX3RpbWU9MTM0MzgwOTY1NCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG95TWpvd09DNDVOalUzTURFck1EQTZNREItTUM0Mk5UY3lPRGMwTnpjNU1qaC0=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoyMjowOC45NjU3MDErMDA6MDB-MC42NTcyODc0Nzc5Mjh-'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoyMjoxMS44Nzg4MDYrMDA6MDB-MC4wMzAzMjY3MjYyMTYzfg
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzI3MDIzYzNkNTExNDdlMGU0NDRhYWMxODcyN2ZjODljZGE3NWMxODpub25jZT0xNDE5OTcmY3JlYXRlX3RpbWU9MTM0MzgwOTY1NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG95TWpveE1TNDROemc0TURZck1EQTZNREItTUM0d016QXpNalkzTWpZeU1UWXpmZw==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MzI3MDIzYzNkNTExNDdlMGU0NDRhYWMxODcyN2ZjODljZGE3NWMxODpub25jZT0xNDE5OTcmY3JlYXRlX3RpbWU9MTM0MzgwOTY1NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG95TWpveE1TNDROemc0TURZck1EQTZNREItTUM0d016QXpNalkzTWpZeU1UWXpmZw==', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODoyMjoxMS44Nzg4MDYrMDA6MDB-MC4wMzAzMjY3MjYyMTYzfg'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODozNTo0MC43Njk3OTkrMDA6MDB-MC4yNTc1OTY2NTU5ODR-
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YzRjYWE1ZWJlNTJiMTJkMzVlZTEzYTlkMjhmMmY3OTlkNTBkNTY5Yjpub25jZT02NTY4NzEmY3JlYXRlX3RpbWU9MTM0MzgxMDQ2NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG96TlRvME1DNDNOamszT1Rrck1EQTZNREItTUM0eU5UYzFPVFkyTlRVNU9EUi0=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YzRjYWE1ZWJlNTJiMTJkMzVlZTEzYTlkMjhmMmY3OTlkNTBkNTY5Yjpub25jZT02NTY4NzEmY3JlYXRlX3RpbWU9MTM0MzgxMDQ2NSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLU1qQXhNaTB3T0Mwd01TQXdPRG96TlRvME1DNDNOamszT1Rrck1EQTZNREItTUM0eU5UYzFPVFkyTlRVNU9EUi0=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-MjAxMi0wOC0wMSAwODozNTo0MC43Njk3OTkrMDA6MDB-MC4yNTc1OTY2NTU5ODR-'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTozNTo0MSBQRFQgMjAxMn4wLjE1MTQzMTg2
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjFjMjVlYWQwM2MxYTI2M2EzYzkwYzk4ZDBlNDUxZWY4YTA0NDNjNjpub25jZT01MzUyNDImY3JlYXRlX3RpbWU9MTM0MzgxMDQ2NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG96TlRvME1TQlFSRlFnTWpBeE1uNHdMakUxTVRRek1UZzI=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjFjMjVlYWQwM2MxYTI2M2EzYzkwYzk4ZDBlNDUxZWY4YTA0NDNjNjpub25jZT01MzUyNDImY3JlYXRlX3RpbWU9MTM0MzgxMDQ2NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG96TlRvME1TQlFSRlFnTWpBeE1uNHdMakUxTVRRek1UZzI=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTozNTo0MSBQRFQgMjAxMn4wLjE1MTQzMTg2'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:OMeGa get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0NToxNSBQRFQgMjAxMn4wLjIxMTEwNjQy
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9OTJkZDY2ZWNmYWJjMzM4N2RkM2I4OWM3ZDlhMTkwYWM5YjZlZGYxNzpub25jZT01MDk0NTkmY3JlYXRlX3RpbWU9MTM0MzgxMTA0MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wTlRveE5TQlFSRlFnTWpBeE1uNHdMakl4TVRFd05qUXk=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9OTJkZDY2ZWNmYWJjMzM4N2RkM2I4OWM3ZDlhMTkwYWM5YjZlZGYxNzpub25jZT01MDk0NTkmY3JlYXRlX3RpbWU9MTM0MzgxMTA0MCZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wTlRveE5TQlFSRlFnTWpBeE1uNHdMakl4TVRFd05qUXk=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0NToxNSBQRFQgMjAxMn4wLjIxMTEwNjQy'}
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0NToyMiBQRFQgMjAxMn4wLjc5MjIwNzM
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MGEzNWEwYmJmMzhhY2QxYTRjOGFjMzljNDM0Njc1NjJjY2YyZDlmNzpub25jZT0xMzQzMzEmY3JlYXRlX3RpbWU9MTM0MzgxMTA0NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wTlRveU1pQlFSRlFnTWpBeE1uNHdMamM1TWpJd056TQ==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MGEzNWEwYmJmMzhhY2QxYTRjOGFjMzljNDM0Njc1NjJjY2YyZDlmNzpub25jZT0xMzQzMzEmY3JlYXRlX3RpbWU9MTM0MzgxMTA0NyZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wTlRveU1pQlFSRlFnTWpBeE1uNHdMamM1TWpJd056TQ==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0NToyMiBQRFQgMjAxMn4wLjc5MjIwNzM'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0Njo1MSBQRFQgMjAxMn4wLjY3NTk0NzI
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZjRmMWNkZTdjM2VlMDk5YmQxNWI0OWI5NGJjMTYwMmNlNWMzODNlYTpub25jZT0xNzAyODEmY3JlYXRlX3RpbWU9MTM0MzgxMTEzNiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wTmpvMU1TQlFSRlFnTWpBeE1uNHdMalkzTlRrME56SQ==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZjRmMWNkZTdjM2VlMDk5YmQxNWI0OWI5NGJjMTYwMmNlNWMzODNlYTpub25jZT0xNzAyODEmY3JlYXRlX3RpbWU9MTM0MzgxMTEzNiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wTmpvMU1TQlFSRlFnTWpBeE1uNHdMalkzTlRrME56SQ==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0Njo1MSBQRFQgMjAxMn4wLjY3NTk0NzI'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0Njo1NiBQRFQgMjAxMn4wLjg4NzU4MzE
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YTIyMWFkM2RkY2NkOWVlYWI3N2UwMTFkNTI5Zjc2NjE5OGIyYjJiNjpub25jZT0xOTYwJmNyZWF0ZV90aW1lPTEzNDM4MTExNDImcm9sZT1wdWJsaXNoZXImc2Vzc2lvbl9pZD0yX01YNHhOalk1TXpZNE1uNHhNamN1TUM0d0xqRi1WMlZrSUVGMVp5QXdNU0F3TVRvME5qbzFOaUJRUkZRZ01qQXhNbjR3TGpnNE56VTRNekU=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YTIyMWFkM2RkY2NkOWVlYWI3N2UwMTFkNTI5Zjc2NjE5OGIyYjJiNjpub25jZT0xOTYwJmNyZWF0ZV90aW1lPTEzNDM4MTExNDImcm9sZT1wdWJsaXNoZXImc2Vzc2lvbl9pZD0yX01YNHhOalk1TXpZNE1uNHhNamN1TUM0d0xqRi1WMlZrSUVGMVp5QXdNU0F3TVRvME5qbzFOaUJRUkZRZ01qQXhNbjR3TGpnNE56VTRNekU=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0Njo1NiBQRFQgMjAxMn4wLjg4NzU4MzE'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:OMeGa get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0ODozNyBQRFQgMjAxMn4wLjcxMDY2NjY2
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZDA2ZDJmMTViNTY5ZDBiNzJhZDYzZTAzNjYwMDZkN2U5MzJlN2UxZDpub25jZT05OTI5MTcmY3JlYXRlX3RpbWU9MTM0MzgxMTI0MiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wT0Rvek55QlFSRlFnTWpBeE1uNHdMamN4TURZMk5qWTI=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9ZDA2ZDJmMTViNTY5ZDBiNzJhZDYzZTAzNjYwMDZkN2U5MzJlN2UxZDpub25jZT05OTI5MTcmY3JlYXRlX3RpbWU9MTM0MzgxMTI0MiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8wT0Rvek55QlFSRlFnTWpBeE1uNHdMamN4TURZMk5qWTI=', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0ODozNyBQRFQgMjAxMn4wLjcxMDY2NjY2'}
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0ODo0NSBQRFQgMjAxMn4wLjY0NDMxNQ
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjdmZWQzZDEzZDdlYzk3Nzc1NzhiZWY2YWMyYzg4ZDg5YjhjZjQ1Mjpub25jZT02MTA0MyZjcmVhdGVfdGltZT0xMzQzODExMjUxJnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9MV9NWDR4TmpZNU16WTRNbjR4TWpjdU1DNHdMakYtVjJWa0lFRjFaeUF3TVNBd01UbzBPRG8wTlNCUVJGUWdNakF4TW40d0xqWTBORE14TlE=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9YjdmZWQzZDEzZDdlYzk3Nzc1NzhiZWY2YWMyYzg4ZDg5YjhjZjQ1Mjpub25jZT02MTA0MyZjcmVhdGVfdGltZT0xMzQzODExMjUxJnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9MV9NWDR4TmpZNU16WTRNbjR4TWpjdU1DNHdMakYtVjJWa0lFRjFaeUF3TVNBd01UbzBPRG8wTlNCUVJGUWdNakF4TW40d0xqWTBORE14TlE=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo0ODo0NSBQRFQgMjAxMn4wLjY0NDMxNQ'}
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: ddmbr, 123
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'ddmbr', 'message': 'success'}
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:session and token request: ddmbr
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo1Mjo1MSBQRFQgMjAxMn4wLjExODMyNjk2
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MmYzM2NmZjU5M2VmMTYxZmNjOGJkNTZjZDMxZDEyZjk1Nzk1MzQyNzpub25jZT02MTQyMTEmY3JlYXRlX3RpbWU9MTM0MzgxMTQ5NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8xTWpvMU1TQlFSRlFnTWpBeE1uNHdMakV4T0RNeU5qazI=
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MmYzM2NmZjU5M2VmMTYxZmNjOGJkNTZjZDMxZDEyZjk1Nzk1MzQyNzpub25jZT02MTQyMTEmY3JlYXRlX3RpbWU9MTM0MzgxMTQ5NiZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8xTWpvMU1TQlFSRlFnTWpBeE1uNHdMakV4T0RNeU5qazI=', 'session_id': u'1_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo1Mjo1MSBQRFQgMjAxMn4wLjExODMyNjk2'}
+DEBUG:root:ddmbr didn't get a comming call
+INFO:root:login request: OMeGa, test
+DEBUG:root:Generated pushToken: 
+INFO:root:response: {'requestType': 'login', 'username': u'OMeGa', 'message': 'success'}
+INFO:root:session and token request: OMeGa
+DEBUG:root:IP address: 127.0.0.1
+DEBUG:root:session_id: 2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo1Mjo1NiBQRFQgMjAxMn4wLjUzMTk5NTg
+DEBUG:root:token: T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MTAxYTk5YzJlNjMzZGNkODYxNGI0M2YxNDRiNDY5NGRiNDcwZWNkYTpub25jZT0yMDU0OTcmY3JlYXRlX3RpbWU9MTM0MzgxMTUwMSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8xTWpvMU5pQlFSRlFnTWpBeE1uNHdMalV6TVRrNU5UZw==
+INFO:root:response: {'requestType': 'session', 'token': 'T1==cGFydG5lcl9pZD0xNjY5MzY4MiZzaWc9MTAxYTk5YzJlNjMzZGNkODYxNGI0M2YxNDRiNDY5NGRiNDcwZWNkYTpub25jZT0yMDU0OTcmY3JlYXRlX3RpbWU9MTM0MzgxMTUwMSZyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0eE5qWTVNelk0TW40eE1qY3VNQzR3TGpGLVYyVmtJRUYxWnlBd01TQXdNVG8xTWpvMU5pQlFSRlFnTWpBeE1uNHdMalV6TVRrNU5UZw==', 'session_id': u'2_MX4xNjY5MzY4Mn4xMjcuMC4wLjF-V2VkIEF1ZyAwMSAwMTo1Mjo1NiBQRFQgMjAxMn4wLjUzMTk5NTg'}
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+INFO:root:ddmbr want to start a conference with OMeGa
+INFO:root:OMeGa get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call
+DEBUG:root:ddmbr didn't get a comming call
+DEBUG:root:OMeGa didn't get a comming call

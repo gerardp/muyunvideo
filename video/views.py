@@ -24,7 +24,7 @@ import OpenTokSDK
 from video.models import Users
 
 # Initialize logging
-logging.basicConfig(filename='server.log',level=logging.INFO)
+logging.basicConfig(filename='server.log',level=logging.DEBUG)
 
 # The container to record call requests
 callDict = dict()
@@ -77,7 +77,7 @@ def requestLoginWithUsername(request):
     if request.method == 'POST' :
         username = request.POST['username']
         password = request.POST['password']
-        logging.info("login request: %s, %s", (username, password))
+        logging.info("login request: %s, %s", username, password)
         #
         cursor.execute("select * from users where name=%s and loginpassword=%s", ( username, password ) )
         m = cursor.fetchall()
@@ -134,8 +134,10 @@ def requestSessionWithUsername(request):
     session_address = request.POST['address']
     logging.debug('IP address: %s', session_address)
     # TODO WRAP needed
-    api_key = '16693682'
-    api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
+    #api_key = '16693682'
+    api_key = '16937882'
+    #api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
+    api_secret = ''
     opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=True)
     videoSession = opentok_sdk.create_session(session_address)
     videoToken = opentok_sdk.generate_token(videoSession.session_id)
@@ -146,7 +148,7 @@ def requestSessionWithUsername(request):
     #
     to_json = {
              "requestType": "session",
-             "sessionID": videoSession.session_id,
+             "session_id": videoSession.session_id,
              "token": videoToken,
              }
     response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
@@ -267,7 +269,7 @@ def requestVideoCallWithUsername(request):
     if request.method == 'POST':
         translator_only = False
         username = request.POST['username']
-        callToUsername = request.POST['callToUserName']
+        callToUsername = request.POST['callToUsername']
 
         # check whether translator-only
         if username == '':
@@ -278,15 +280,22 @@ def requestVideoCallWithUsername(request):
         # TODO
         # Then find the user he is calling
         if not translator_only:
-            if callToUser in callDict:
+            if callToUsername in callDict:
                 # TODO
                 # He is already called by others
                 pass
             else:
                 # Append to the dict
+                logging.info("%s want to start a conference with %s", username, callToUsername)
                 callDict[callToUsername] = username
+        #
+        to_json = {"message": "success"}
+        response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
     else:
-        return HttpResponse("Error!")
+        response = HttpResponse("Error!")
+
+    response['Access-Control-Allow-Origin']='*'
+    return response
 
 def answerVideoCallWithUsername(request):
     """
@@ -322,9 +331,12 @@ def answerVideoCallWithUsername(request):
             session_id = cursor.fetchall()
             # Then response with it
             to_json = {'session_id':session_id}
+            logging.info('%s get a comming call', username)
+            del callDict[username]
         else:
             #
             # There's no comming call
+            logging.debug('%s didn\'t get a comming call', username)
             to_json = {'session_id':''}
 
         response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
