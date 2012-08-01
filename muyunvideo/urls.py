@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # url(r'^muyunvideo/', include('muyunvideo.foo.urls')),
     url(r'^login/$', 'video.views.requestLoginWithUsername'),
     url(r'^contacts/$', 'video.views.requestContactsWithUsername'),
+    url(r'^updatePassword/$', 'video.views.updatePasswordWithUsername'),
     url(r'^videoCallTo/$', 'video.views.requestVideoCallWithUsername'),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
