@@ -26,6 +26,14 @@ from video.models import Users
 # Initialize logging
 logging.basicConfig(filename='server.log',level=logging.DEBUG)
 
+# Initialize OpenTok
+# TODO WRAP needed
+#api_key = '16693682'
+api_key = '16937882'
+#api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
+api_secret = 'fb8c4ec59099e592bd862f2c018f704c80a7eac3'
+opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=False)
+
 # The container to record call requests
 callDict = dict()
 
@@ -92,6 +100,7 @@ def requestLoginWithUsername(request):
             except:
                 # Web front-end
                 pass
+            print pushToken
             logging.debug("Generated pushToken: %s", pushToken)
             cursor.execute("update users set pushToken=%s where name=%s", (pushToken, username))
             #
@@ -100,7 +109,7 @@ def requestLoginWithUsername(request):
                     "requestType": "login",         # ca be banned since pushing is not necessary in this method
                     "username": username,
                     "message": "success",
-                    # "myInfo": getMyInfo(username) # should be bannd. One method should do only one thing.
+                    "myInfo": getMyInfo(username) #TODO should be bannd. One method should do only one thing.
                     }
         else:
             #
@@ -116,7 +125,8 @@ def requestLoginWithUsername(request):
         response = HttpResponse("Error!")
     #
     # TODO WRAP
-    response['Access-Control-Allow-Origin']='*'
+    if request.META['HTTP_USER_AGENT'].find("iPhone") == -1:
+        response['Access-Control-Allow-Origin']='*'
     return response
 
 #
@@ -133,12 +143,6 @@ def requestSessionWithUsername(request):
     logging.info("session and token request: %s", username)
     session_address = request.POST['address']
     logging.debug('IP address: %s', session_address)
-    # TODO WRAP needed
-    #api_key = '16693682'
-    api_key = '16937882'
-    #api_secret = '672637d8e5ab9aff674ade175de1831c00c6e57a'
-    api_secret = 'fb8c4ec59099e592bd862f2c018f704c80a7eac3'
-    opentok_sdk = OpenTokSDK.OpenTokSDK(api_key, api_secret, staging=True)
     videoSession = opentok_sdk.create_session(session_address)
     videoToken = opentok_sdk.generate_token(videoSession.session_id)
     cursor.execute("update users set session_id=%s where name=%s", (videoSession.session_id, username))
@@ -178,33 +182,8 @@ def requestContactsWithUsername(request):
                 }
         print to_json
         response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
-        response['Access-Control-Allow-Origin']='*'
-        return response
-    else:
-        return HttpResponse("Error")
-
-def requestContactsWithUsername(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        print username
-        cursor.execute("select uid from users where name=%s", username)
-        mm = cursor.fetchall()
-        id1 = mm[0][0]
-        cursor.execute("select * from contacts where id1=%s", id1)
-        member = cursor.fetchall()
-        rlist=[]
-        for item in member:
-            cursor.execute("select uid, name, realname, language_id from users where uid=%s", item[2] )
-            nlist = ('uid', 'username', 'name','language')
-            vlist = cursor.fetchall()
-            rlist.append(dict(zip((nlist),(vlist[0]))))
-        to_json = {
-                "requestType": "contacts",
-                "contacts": rlist
-                }
-        print to_json
-        response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
-        response['Access-Control-Allow-Origin']='*'
+        if request.META['HTTP_USER_AGENT'].find("iPhone") == -1:
+            response['Access-Control-Allow-Origin']='*'
         return response
     else:
         return HttpResponse("Error")
@@ -270,6 +249,7 @@ def requestVideoCallWithUsername(request):
         translator_only = False
         username = request.POST['username']
         callToUsername = request.POST['callToUsername']
+        print callDict
 
         # check whether translator-only
         if username == '':
@@ -288,13 +268,32 @@ def requestVideoCallWithUsername(request):
                 # Append to the dict
                 logging.info("%s want to start a conference with %s", username, callToUsername)
                 callDict[callToUsername] = username
-        #
+            print request.META
+            if request.META['HTTP_USER_AGENT'].find("iPhone") != -1:
+                # Send a notification
+                cursor.execute("select pushToken from users where name=%s", callToUsername)
+                mm = cursor.fetchall()
+                token_hex = mm[0][0]
+                print token_hex
+                message = '令超小朋友!接电话！'
+                print "hahaha"
+                payload = Payload(alert=message.decode('utf-8'), sound="default", badge=1,
+                custom={'callType':'videoCall', 
+                        'callContact': {
+                                        "uid": "101",
+                                    "username": "test1",
+                                    "name": "Chenyu Lan",
+                                    "company": "SYSU",
+                                    "language": "CHN",
+                                }})
+                apns.gateway_server.send_notification(token_hex, payload)
         to_json = {"message": "success"}
         response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
     else:
         response = HttpResponse("Error!")
 
-    response['Access-Control-Allow-Origin']='*'
+    if request.META['HTTP_USER_AGENT'].find("iPhone") == -1:
+        response['Access-Control-Allow-Origin']='*'
     return response
 
 def answerVideoCallWithUsername(request):
@@ -322,27 +321,34 @@ def answerVideoCallWithUsername(request):
         #    t = 1
 
         username = request.POST['username']
+        print username
+        print callDict
         if username in callDict:
             #
             # Then there's a call comming
             #
             # First obtain the caller's tokbox session id
+            print "good"
             cursor.execute("select session_id from users where name=%s", callDict[username])
-            session_id = cursor.fetchall()
+            m = cursor.fetchall()
+            session_id = m[0][0]
+            # generate a corresponding token
+            token = opentok_sdk.generate_token(session_id)
             # Then response with it
-            to_json = {'session_id':session_id}
+            to_json = {'session_id':session_id, 'token':token}
             logging.info('%s get a comming call', username)
             del callDict[username]
         else:
             #
             # There's no comming call
             logging.debug('%s didn\'t get a comming call', username)
-            to_json = {'session_id':''}
+            to_json = {'session_id':'', 'token':''}
 
         response = HttpResponse(simplejson.dumps(to_json), mimetype='application/json')
     else:
         response = HttpResponse("Error!")
 
+    logging.info("response: %s", to_json)
     response['Access-Control-Allow-Origin']='*'
     return response
 
